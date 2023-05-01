@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prestação</title>
+</head>
+<script type="text/javascript">
+    var valor = parseFloat(prompt("Digite o valor da prestação em atraso: "));
+    var taxa = parseFloat(prompt("Digite a taxa de juros aplicada em %: "));
+    var dias_atraso = parseInt(prompt("Digite a quantidade de dias de atraso: "));
+
+    var prestacao = valor + (valor * (taxa / 100) * (dias_atraso / 30));
+
+    alert(`O valor da prestação em atraso é de R$${prestacao.toFixed(2)}.`);
+
+</script>
+
+</html>
